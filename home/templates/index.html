@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <title> PrimerFinder</title>
+    </head>
+    <body>
+        <header> <h1>PrimerFinder</h1></header>
+        <div id="container">
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Previous runs</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <main>
+                <section>
+                    <h1>Run PrimerFinder</h1>
+                    <form>
+                        <p>Project title</p> <input type="text">
+                        <p>Gene of interest</p> <input type="text"> <!-- Idee: zoekbalk waar alle genen instaan-->
+                        <p>Genbank file of organism genome</p> <input type="file">
+                        <br/>
+                        <input type="submit" value="RUN">
+                    </form>
+                </section>
+            </main>
+        </div>
+        <footer>&copy; rechten van mij</footer>
+    </body>
+</html>

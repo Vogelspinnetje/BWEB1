@@ -1,0 +1,112 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header {
+    width: 98%;
+    background-color: rgb(88, 106, 87);
+    padding: 1%;
+    text-align: center;
+    color: white;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 50%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto 20px;
+    padding: 15px 15px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav li:hover {
+    border-bottom: 1px solid rgb(49, 209, 0);
+    transform: scale(1.01);
+}
+
+nav .active {
+    border-bottom: 1px solid rgb(49, 209, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 600px;
+    text-align: center;
+}
+
+form p {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input {
+    display: inline;
+    margin-bottom: 15px;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 4px;
+    outline: none;
+}
+
+form input[type=text]:focus {
+    transition: border 1s;
+    border: 2px solid rgb(49, 209, 0);
+}
+
+form input[type=text]:hover {
+    transform: scale(1.01);
+}
+
+form input[type="text"]:focus:hover {
+    transform: scale(1);
+  }
+
+form input[type=submit] {
+    background-color: rgb(49, 209, 0);
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 250px;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    transform: scale(1.01);
+}
+
+footer{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    text-align: center;
+}
