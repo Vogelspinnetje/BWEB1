@@ -1,1 +1,1 @@
-# BWEB1
+# BWEB1 / PrimerFinder interface
